@@ -12,13 +12,20 @@ namespace VariablesCS
 
             Console.WriteLine();
             Console.WriteLine($"{fullName} enjoyed {numberOfCupsOfCoffee} cups of coffee on {todaysDate}");
-
-
-
+            Console.WriteLine();
 
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            Console.WriteLine($"Hey, {userName}!");
+
+            if (userName == "Alice")
+            {
+                Console.WriteLine($"WeLc0mE to tHE RabBit h0le, ALICE.");
+            }
+            else
+            {
+                Console.WriteLine($"Hey, {userName}!");
+            }
+
             Console.WriteLine();
 
             Console.Write("Please enter a number: ");
@@ -26,6 +33,7 @@ namespace VariablesCS
             Console.WriteLine();
             Console.Write("Please enter another number: ");
             var secondNumberAsString = Console.ReadLine();
+            Console.WriteLine();
 
             var firstOperand = double.Parse(firstNumberAsString);
             var secondOperand = double.Parse(secondNumberAsString);
@@ -36,7 +44,9 @@ namespace VariablesCS
             var quotient = firstOperand / secondOperand;
             var remainder = firstOperand % secondOperand;
 
-            Console.WriteLine($"Your lil numbers have a sum of {sum}, a difference of {difference}, a product of { product}, a quotient of { quotient}, and a remainder of { remainder}.");
+            Console.WriteLine($"Your lil' numbers have a sum of {sum}, a difference of {difference}, a product of { product}, a quotient of { quotient}, and a remainder of { remainder}.");
+
+
 
         }
     }
